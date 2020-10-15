@@ -47,8 +47,7 @@ namespace DC
 			_client.Log += Log;
 
 			await _client.LoginAsync(TokenType.Bot,
-				"".Trim());
-
+				"Token".Trim());
 			await _client.StartAsync();
 
 			alperen = Int32.Parse(File.ReadAllText(filePath));

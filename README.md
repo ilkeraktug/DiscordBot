@@ -1,2 +1,4 @@
-# DC
+# Discord Botu
+
+#Eğlence Botu
  
