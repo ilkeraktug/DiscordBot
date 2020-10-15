@@ -31,7 +31,7 @@ namespace DC
 			// Internet or by using other methods such as reading from 
 			// a configuration.
 			await _client.LoginAsync(TokenType.Bot,
-				"NzE2NDIzODc3ODg2MjE0MTQ1.XtLjuw.n - oxk3C9QjsOrzu1hqWB7KRZQiw");
+				");
 			await _client.StartAsync();
 
 			_client.MessageReceived += MessageReceived;
