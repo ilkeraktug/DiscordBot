@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3xUl+8PRKG6A8QXPfabnpC2bwjOk1CP2d9cO9v2E1/R+sHWQyYzl6rgsxsIGCaRokhT72BWYVUbc4qwZ2VCO+g==",
+  "dgSpecHash": "xANnyQ1Ac0comNZQ938SDCn6fpY4W2ohPHJyvUx91Ke3aNW89aVCAXbZN3SluaQVHTsZxLXk8NbDA2SOmq8tEQ==",
   "success": true,
   "projectFilePath": "C:\\dev\\DC\\DC\\DC.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\ILKER\\.nuget\\packages\\discord.net.rest\\2.2.0\\discord.net.rest.2.2.0.nupkg.sha512",
     "C:\\Users\\ILKER\\.nuget\\packages\\discord.net.webhook\\2.2.0\\discord.net.webhook.2.2.0.nupkg.sha512",
     "C:\\Users\\ILKER\\.nuget\\packages\\discord.net.websocket\\2.2.0\\discord.net.websocket.2.2.0.nupkg.sha512",
+    "C:\\Users\\ILKER\\.nuget\\packages\\ffmpeg.nuget\\1.0.0\\ffmpeg.nuget.1.0.0.nupkg.sha512",
+    "C:\\Users\\ILKER\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "C:\\Users\\ILKER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\ILKER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ILKER\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ILKER\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
