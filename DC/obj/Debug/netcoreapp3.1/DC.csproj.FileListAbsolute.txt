@@ -15,8 +15,10 @@ C:\dev\DC\DC\bin\Debug\netcoreapp3.1\Discord.Net.WebSocket.dll
 C:\dev\DC\DC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\dev\DC\DC\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
 C:\dev\DC\DC\bin\Debug\netcoreapp3.1\System.Linq.Async.dll
-C:\dev\DC\DC\obj\Debug\netcoreapp3.1\DC.csproj.CoreCompileInputs.cache
 C:\dev\DC\DC\obj\Debug\netcoreapp3.1\DC.csproj.CopyComplete
 C:\dev\DC\DC\obj\Debug\netcoreapp3.1\DC.dll
 C:\dev\DC\DC\obj\Debug\netcoreapp3.1\DC.pdb
 C:\dev\DC\DC\obj\Debug\netcoreapp3.1\DC.genruntimeconfig.cache
+C:\dev\DC\DC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\dev\DC\DC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\dev\DC\DC\obj\Debug\netcoreapp3.1\DC.csproj.CoreCompileInputs.cache
