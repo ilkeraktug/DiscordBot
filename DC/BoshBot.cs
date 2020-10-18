@@ -6,6 +6,7 @@ using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
+using Discord.Audio;
 
 namespace DC
 {
@@ -18,9 +19,15 @@ namespace DC
 		IServiceProvider _services;
 
 		public static IAudioChannel _audioChannel;
+		public static IAudioClient _audioClient;
+		public static IAudioChannel _lastChannel;
+
+		public static IMessageChannel _channelBotdeneme;
 
 		public static int alperen = int.Parse(File.ReadAllText("alperen.txt"));
 		public static int alperenMercy = int.Parse(File.ReadAllText("alperenMercy.txt"));
+
+		public static string help = File.ReadAllText("help.txt");
 
 		public static readonly DateTime today = new DateTime(2020, 10, 15);
 		public static int startPoint = 107;

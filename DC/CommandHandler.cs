@@ -5,6 +5,7 @@ using Discord.Commands;
 using Discord.WebSocket;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
 
 namespace DC
 {
@@ -64,8 +65,11 @@ namespace DC
 		private async Task ExecuteCommands(Optional<CommandInfo> command, ICommandContext context, IResult result)
 		{
 			_channel = _client.GetChannel(766718633442803763) as IMessageChannel;
+			BoshBot._channelBotdeneme = _client.GetChannel(765600487105363968) as IMessageChannel;
 
 			if (!command.IsSpecified) return;
+
+			
 
 			if (!result.IsSuccess)
 			{

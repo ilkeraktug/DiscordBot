@@ -5,12 +5,19 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Audio;
 using Discord.Commands;
+using Discord.Rest;
 using Discord.WebSocket;
 
 namespace DC
 {
 	public class ComamndModule : ModuleBase<SocketCommandContext>
 	{
+
+		[Command("..help")]
+		public async Task help()
+		{
+			await ReplyAsync(BoshBot.help);
+		}
 
 		[Command("Alperen")]
 		public async Task Alperen()
@@ -29,10 +36,10 @@ namespace DC
 				BoshBot.offset = (int)Math.Floor(DateTime.Now.Subtract(BoshBot.today).TotalDays);
 			}
 			var random = new Random();
-			int randomNumber = random.Next(0, 125);
+			int randomNumber = random.Next(0, 25);
 			string nazmi = " nazmi" + (BoshBot.startPoint + BoshBot.offset);
 			await ReplyAsync(Context.User.Mention + nazmi);
-			if (randomNumber == 78)
+			if (randomNumber == 10)
 				await ReplyAsync("Kes Sesini be " + Context.User.Mention + " ...");
 		}
 
@@ -47,18 +54,62 @@ namespace DC
 			}
 			else
 			{
+				var dispoe = Context.Channel.EnterTypingState();
+				await Task.Delay(500);
 				await ReplyAsync("Sadece Alperen sevebilir!!");
+				dispoe.Dispose();
 			}
-
 		}
 
 		[Command("leave")]
 		public async Task Leave()
 		{
 			var user = Context.User as IGuildUser;
+
 			if (user.VoiceChannel == BoshBot._audioChannel && user.VoiceChannel != null)
+			{
 				await user.VoiceChannel.DisconnectAsync();
+				BoshBot._audioChannel = null;
+			}
 
 		}
+
+		[Command("leave")]
+		public async Task Leave(IVoiceChannel channel = null)
+		{
+			var user = Context.User as IGuildUser;
+			if (channel != null)
+				await channel.DisconnectAsync();
+
+			if (user.VoiceChannel == BoshBot._audioChannel)
+			{
+				await user.VoiceChannel.DisconnectAsync();
+				BoshBot._audioChannel = null;
+			}
+
+		}
+
+		/*[Command("stop")]
+		*public async Task stop(IVoiceChannel channel = null)
+		*{
+		*	var user = Context.User as IGuildUser;
+		*	if (channel != null)
+		*		await channel.DisconnectAsync();
+		*
+		*	if (user.VoiceChannel == BoshBot._audioChannel && user.VoiceChannel != null)
+		*	{
+		*		Context.Client.St
+		*	}
+		}*/
+
+		[Command("Demokrasi")]
+		public async Task Demokrasi(IGuildUser user)
+		{
+				await user.ModifyAsync(x => { 
+					x.ChannelId = 743042276464263250;
+				});
+		}
 	}
+
+
 }
